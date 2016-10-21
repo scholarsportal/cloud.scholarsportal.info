@@ -1,0 +1,278 @@
+# Site settings
+baseurl = "http://cloud.scholarsportal.info"
+title = "Ontario Library Research Cloud"
+languageCode = "en-us"
+theme = "hugo-agency-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) or
+	# most longer texts.
+	#
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Ontario Council of University Libraries (OCUL)"
+	description = ""
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "kaitlin.newson@utoronto.ca"
+
+    # Link custom assets relative to /static
+    custom_css = []
+    custom_js  = []
+
+
+	# Navigation
+	[params.navigation]
+		brand = "OLRC"
+		services = "Benefits"
+		about = "Features"
+		portfolio = "Use Cases"
+		team = "Team"
+		clients_list = "Partners"
+		contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #    url = "#"
+    #    name = ""
+    #    weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+        url = "https://olrc.scholarsportal.info/swiftbrowser/login/"
+        name = "Login"
+        weight = 10
+
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.jpg' in
+		# the 'static/img' folder.
+		title = "Ontario Library Research Cloud"
+		subtitle = "subtitle text"
+		buttonText = "Tell me more"
+
+
+	# Benefits section
+	[params.services]
+        enable = true
+		title = "Benefits"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                icon = "fa-shield"
+                title = "Reliable"
+                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+            [[params.services.row.list]]
+                icon = "fa-usd"
+                title = "Affordable"
+                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+            [[params.services.row.list]]
+                icon = "fa-check"
+                title = "Usable"
+                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+    # Features section
+	[params.about]
+        enable = true
+		title = "Features"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		endpoint = "<br>Join us!"
+
+		# The events will be listed from the top to the bottom.
+		# All images are stored under 'static/img/about'.
+		# Replace them with your own.
+
+		[[params.about.events]]
+			img = "openstack.png"
+			title = "OpenStack"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+		[[params.about.events]]
+			img = "logo.png"
+			title = "Swiftbrowser"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+		[[params.about.events]]
+			img = "owncloud.png"
+			title = "ownCloud"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
+
+	# Use Cases section
+	[params.portfolio]
+        enable = true
+		# All projects defined in their own files. You can find example projects
+		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+		# at the root of this Hugo site.
+		# For more information take a look at the README.
+		title = "Use Cases"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+		[params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttonText = "Close project"
+
+
+	# Team section (disabled)
+	[params.team]
+        enable = false
+		title = "Our amazing team"
+		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+		# All team member's pictures are stored under 'static/img/team'.
+		# Replace them with your own too.
+		[[params.team.members]]
+			img = "1.jpg"
+			name = "Kay Garland"
+			position = "Lead Designer"
+			social = [
+				["fa-twitter", "#"],
+				["fa-facebook", "#"],
+				["fa-linkedin", "#"]
+			]
+
+		[[params.team.members]]
+			img = "2.jpg"
+			name = "Larry Parker"
+			position = "Lead Marketer"
+			social = [
+				["fa-twitter", "#"],
+				["fa-facebook", "#"],
+				["fa-linkedin", "#"]
+			]
+
+		[[params.team.members]]
+			img = "3.jpg"
+			name = "Diana Pertersen"
+			position = "Lead Developer"
+			social = [
+				["fa-twitter", "#"],
+				["fa-facebook", "#"],
+				["fa-linkedin", "#"]
+			]
+
+	# Partners section
+    [params.clients_list]
+        enable = true
+        title="Participating Schools"
+
+    	# All the clients' logos are stored under 'static/img/logos'.
+    	# Replace them with your clients's logos.
+
+    	[[params.clients]]
+    		logo = "Carleton.jpg"
+    		link = "http://carleton.ca/"
+
+    	[[params.clients]]
+    		logo = "Guelph.jpg"
+    		link = "http://www.uoguelph.ca/"
+
+    	[[params.clients]]
+    		logo = "Laurier.png"
+    		link = "https://www.wlu.ca/"
+
+    	[[params.clients]]
+    		logo = "McMaster.jpg"
+    		link = "http://www.mcmaster.ca/"
+
+    	[[params.clients]]
+    		logo = "Ottawa.png"
+    		link = "https://www.uottawa.ca"
+
+    	[[params.clients]]
+    		logo = "Queens.png"
+    		link = "http://www.queensu.ca/"
+
+    	[[params.clients]]
+    		logo = "Ryerson.png"
+    		link = "http://www.ryerson.ca/index.html"
+
+    	[[params.clients]]
+    		logo = "Toronto.png"
+    		link = "https://www.utoronto.ca/"
+
+    	[[params.clients]]
+    		logo = "Waterloo.png"
+    		link = "https://uwaterloo.ca/"
+
+    	[[params.clients]]
+    		logo = "Windsor.jpg"
+    		link = "http://www.uwindsor.ca/"
+
+    	[[params.clients]]
+    		logo = "York.png"
+    		link = "http://www.yorku.ca/index.html"
+
+
+	# Contact section
+	[params.contact]
+        enable = true
+		title = "Contact us"
+		subtitle  = "Lorem ipsum dolor sit amet consectetur."
+		buttonText = "Send message"
+
+		# 'warning' defines error messages for invalid inputs
+		[params.contact.form.name]
+			text = "Your Name *"
+			warning = "Please enter your name."
+
+		[params.contact.form.email]
+			text = "Your Email *"
+			warning = "Please enter your email address."
+
+		[params.contact.form.phone]
+			text = "Your Organization *"
+			warning = "Please enter your organization."
+
+		[params.contact.form.message]
+			text = "Your Message *"
+			warning = "Please enter a message."
+
+
+	# Footer section
+	[params.footer]
+        enable = true
+		copyright = "&copy; Ontario Council of University Libraries"
+		link = "#"
+
+		[[params.footer.social]]
+			icon = "fa-twitter"
+			link = "https://twitter.com/scholarsportal"
+
+		[[params.footer.quicklinks]]
+			text = "Privacy Policy"
+			link = "#"
+
+		[[params.footer.quicklinks]]
+			text = "Terms of Use"
+			link = "#"
