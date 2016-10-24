@@ -48,6 +48,8 @@ googleAnalytics = ""
 		clients_list = "Partners"
 		contact = "Contact"
 
+		img = "olrc-logo-original.png"
+		
     # Add custom links. Those can be pre- and postpended to the default menu above.
     # Use the weight attribute to order your custom links. Uncomment the example
     # below and replace the values with your own.
@@ -69,9 +71,12 @@ googleAnalytics = ""
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
-		title = "Ontario Library Research Cloud"
-		subtitle = "subtitle text"
+		title = "ONTARIO LIBRARY RESEARCH CLOUD"
+		subtitle = "Libraries are forever. <br />So is your data."
 		buttonText = "Tell me more"
+		
+		[[params.hero.logo]]
+			img = "olrc-logo-original.png"
 
 
 	# Benefits section
@@ -263,7 +268,8 @@ googleAnalytics = ""
 	[params.footer]
         enable = true
 		copyright = "&copy; Ontario Council of University Libraries"
-		link = "#"
+		logo = "ocul.png"
+		link = "http://ocul.on.ca"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"

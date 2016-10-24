@@ -14,7 +14,7 @@ body {
 }
 
 .text-primary {
-    color: ##0074be;
+    color: #0074be;
 }
 
 p {
@@ -178,6 +178,33 @@ fieldset[disabled] .btn-xl.active {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #0074be;
 }
+.navbar-brand {
+	padding:0px 15px;
+}
+.navbar-brand img {
+	width:75px;
+	opacity:0;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.navbar-shrink img {
+	
+	  /* make things invisible upon start */
+	-webkit-animation:fadeIn 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn 1;
+	animation:fadeIn 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+}
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -210,6 +237,8 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
+	height:100px;
+	padding-top:40px;
 }
 
 .navbar-default .nav li a:hover,
@@ -230,6 +259,9 @@ fieldset[disabled] .btn-xl.active {
     background-color: #94d7f6;
 }
 
+.ocul img {
+	width:300px;
+}
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -239,21 +271,22 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: padding .3s;
         transition: padding .3s;
     }
-
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        padding-top:10px;
+		font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
     }
 
     .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
+        border-radius: 0px;
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
+        padding:0;
         background-color: #222;
+		height:100px;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -262,7 +295,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-    text-align: center;
+    text-align: left;
     color: #fff;
     background-attachment: scroll;
     background-image: url(../img/header-bg.jpg);
@@ -280,44 +313,90 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
-}
-
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 50px;
-    font-weight: 700;
+    margin-top:45px;
+	margin-bottom: 25px;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 52px;
+ 	font-weight:100;
     line-height: 50px;
 }
 
-@media(min-width:768px) {
+header .intro-text .intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 75px;
+    font-weight: 800;
+    line-height: 75px;
+}
+
+@media(max-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 150px;
         padding-bottom: 200px;
     }
-
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
+    section {
+        padding: 150px 0;
     }
-
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 75px;
-        font-weight: 700;
-        line-height: 75px;
+    header .intro-text .intro-lead-in { 
+		font-size: 52px;
+		line-height: 45px;
+	}
+	header .intro-text .intro-heading { 
+		font-size:55px;
+		line-height: 50px;
+	}
+		.navbar-right {
+	    float: left!important;
+	    /* margin-right: -15px; */
+	}
+	.ocul {
+		margin-bottom:25px;
+	}
+	.navbar-brand img {
+	    width: 45px;
+	    
+	}
+}
+@media(max-width:568px) {
+    header .intro-text {
+        padding-top: 50px;
+        padding-bottom: 200px;
     }
+    header .intro-text img {
+       display:none;
+    }
+	.navbar-brand img {
+	    width: 45px;
+	    opacity: 1;
+	}
+	.fade-in {
+		opacity: 1;
+	}
+    section {
+        padding: 150px 0;
+    }
+    header .intro-text .intro-lead-in { 
+		font-size: 18px;
+		line-height: 45px;
+	}
+	header .intro-text .intro-heading { 
+		font-size:25px;
+		line-height: 22px;
+	}
+		.navbar-right {
+	    float: left!important;
+	    /* margin-right: -15px; */
+	}
+	.ocul {
+		margin-bottom:25px;
+	}
+	.navbar-shrink img {
+	
+		animation:none;
+
+
+	}
 }
 
 section {
@@ -337,12 +416,6 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
-}
-
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
 }
 
 .service-heading {
