@@ -42,7 +42,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: #448dbb;
 }
 
 h1,
@@ -134,9 +134,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #94d7f6;
-    color: #424242;
-    background-color: #94d7f6;
+    color: #fff;
+    background-color: #005f9c;
 }
 
 .btn-xl:active,
@@ -179,11 +178,15 @@ fieldset[disabled] .btn-xl.active {
     color: #0074be;
 }
 
+.navbar-brand img {
+    display: inline-block;
+}
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #94d7f6;
+    color: #0074be;
 }
 
 .navbar-default .navbar-collapse {
@@ -227,10 +230,11 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #94d7f6;
+    background-color: #0074be;
 }
 
 @media(min-width:768px) {
+
     .navbar-default {
         padding: 25px 0;
         border: 0;
@@ -240,7 +244,7 @@ fieldset[disabled] .btn-xl.active {
         transition: padding .3s;
     }
 
-    .navbar-default .navbar-brand {
+    .navbar-default .navbar-brand{
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
@@ -496,6 +500,10 @@ section h3.section-subheading {
     background-color: #0074be;
 }
 
+.timeline-image a{
+    color:#fff;
+}
+
 .timeline>li .timeline-image h4 {
     margin-top: 12px;
     font-size: 10px;
@@ -653,7 +661,7 @@ section.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    //background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
