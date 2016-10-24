@@ -47,7 +47,6 @@ googleAnalytics = ""
 		team = "Team"
 		clients_list = "Partners"
 		contact = "Contact"
-
 		img = "olrc-logo-original.png"
 		
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -63,7 +62,7 @@ googleAnalytics = ""
     # postpended links
     [[menu.postpend]]
         url = "https://olrc.scholarsportal.info/swiftbrowser/login/"
-        name = "Login"
+        name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
         weight = 10
 
 
@@ -83,7 +82,7 @@ googleAnalytics = ""
 	[params.services]
         enable = true
 		title = "Benefits"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		subtitle = "Why Should I Use the OLRC?"
 
         [[params.services.row]]
 
@@ -107,7 +106,7 @@ googleAnalytics = ""
         enable = true
 		title = "Features"
 		subtitle = "Lorem ipsum dolor sit amet consectetur."
-		endpoint = "<br>Join us!"
+		endpoint = "[<br>Contact Us!](#contact)"
 
 		# The events will be listed from the top to the bottom.
 		# All images are stored under 'static/img/about'.
@@ -123,7 +122,6 @@ googleAnalytics = ""
 			title = "Swiftbrowser"
 			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
-
 		[[params.about.events]]
 			img = "owncloud.png"
 			title = "ownCloud"
@@ -138,7 +136,7 @@ googleAnalytics = ""
 		# at the root of this Hugo site.
 		# For more information take a look at the README.
 		title = "Use Cases"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		subtitle = "How Can I Use the OLRC?"
 
 		[params.portfolio.modal]
             client = "Client"
@@ -243,7 +241,7 @@ googleAnalytics = ""
 	[params.contact]
         enable = true
 		title = "Contact us"
-		subtitle  = "Lorem ipsum dolor sit amet consectetur."
+		subtitle  = "Get In Touch!"
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
