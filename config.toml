@@ -127,6 +127,11 @@ googleAnalytics = ""
 			title = "ownCloud"
 			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
+		[[params.about.events]]
+			img = "orion.png"
+			title = "ORION"
+			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+
 
 	# Use Cases section
 	[params.portfolio]
