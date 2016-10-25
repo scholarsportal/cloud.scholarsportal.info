@@ -38,13 +38,6 @@ a {
     color: #0074be;
 }
 
-a:hover,
-a:focus,
-a:active,
-a.active {
-    color: #fec503;
-}
-
 h1,
 h2,
 h3,
@@ -178,9 +171,11 @@ fieldset[disabled] .btn-xl.active {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #0074be;
 }
+
 .navbar-brand {
 	padding:0px 15px;
 }
+
 .navbar-brand img {
 	width:75px;
 	opacity:0;
@@ -262,6 +257,7 @@ fieldset[disabled] .btn-xl.active {
 .ocul img {
 	width:300px;
 }
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -271,6 +267,7 @@ fieldset[disabled] .btn-xl.active {
         -moz-transition: padding .3s;
         transition: padding .3s;
     }
+
     .navbar-default .navbar-brand {
         padding-top:10px;
 		font-size: 2em;
@@ -330,32 +327,43 @@ header .intro-text .intro-heading {
     line-height: 75px;
 }
 
+@media(max-width:990px) {
+    .navbar-brand img {
+        width: 45px;
+    }
+}
+
 @media(max-width:768px) {
     header .intro-text {
         padding-top: 150px;
         padding-bottom: 200px;
     }
+
     section {
         padding: 150px 0;
     }
+
     header .intro-text .intro-lead-in { 
 		font-size: 52px;
 		line-height: 45px;
 	}
+
 	header .intro-text .intro-heading { 
 		font-size:55px;
 		line-height: 50px;
 	}
-		.navbar-right {
+
+	.navbar-right {
 	    float: left!important;
 	    /* margin-right: -15px; */
 	}
+
 	.ocul {
 		margin-bottom:25px;
 	}
+
 	.navbar-brand img {
 	    width: 45px;
-	    
 	}
 }
 @media(max-width:568px) {
@@ -363,40 +371,47 @@ header .intro-text .intro-heading {
         padding-top: 50px;
         padding-bottom: 200px;
     }
+
     header .intro-text img {
        display:none;
     }
+
 	.navbar-brand img {
 	    width: 45px;
 	    opacity: 1;
 	}
+
 	.fade-in {
 		opacity: 1;
 	}
+
     section {
         padding: 150px 0;
     }
+
     header .intro-text .intro-lead-in { 
 		font-size: 18px;
 		line-height: 45px;
 	}
+
 	header .intro-text .intro-heading { 
 		font-size:25px;
 		line-height: 22px;
 	}
-		.navbar-right {
+
+	.navbar-right {
 	    float: left!important;
 	    /* margin-right: -15px; */
 	}
+
 	.ocul {
 		margin-bottom:25px;
 	}
+
 	.navbar-shrink img {
-	
 		animation:none;
-
-
 	}
+
 }
 
 section {
@@ -566,6 +581,10 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
+    background-color: #fff;
+}
+
+.timeline>li .endpoint {
     background-color: #0074be;
 }
 
