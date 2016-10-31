@@ -13,21 +13,21 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="{{ with .Site.Params.contact.form.name.text }}{{ .  | markdownify }}{{ end }}" name="name" required data-validation-required-message="{{ with .Site.Params.contact.form.name.warning }}{{ . | markdownify}}{{ end }}">
+                                <input type="text" class="form-control" aria-label="Please enter your name." placeholder="{{ with .Site.Params.contact.form.name.text }}{{ .  | markdownify }}{{ end }}" name="name" required data-validation-required-message="{{ with .Site.Params.contact.form.name.warning }}{{ . | markdownify}}{{ end }}">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="{{ with .Site.Params.contact.form.email.text }}{{ . | markdownify }}{{ end }}" name="email" required data-validation-required-message="{{ with .Site.Params.contact.form.email.warning }}{{ . | markdownify }}{{ end }}">
+                                <input type="email" class="form-control" aria-label="Please enter your email address." placeholder="{{ with .Site.Params.contact.form.email.text }}{{ . | markdownify }}{{ end }}" name="email" required data-validation-required-message="{{ with .Site.Params.contact.form.email.warning }}{{ . | markdownify }}{{ end }}">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="{{ with .Site.Params.contact.form.phone.text }}{{ . | markdownify }}{{ end }}" name="organization" data-validation-required-message="{{ with .Site.Params.contact.form.phone.warning }}{{ . | markdownify }}{{ end }}">
+                                <input type="text" class="form-control" aria-label="Please enter your phone number." placeholder="{{ with .Site.Params.contact.form.phone.text }}{{ . | markdownify }}{{ end }}" name="organization" data-validation-required-message="{{ with .Site.Params.contact.form.phone.warning }}{{ . | markdownify }}{{ end }}">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="{{ with .Site.Params.contact.form.message.text }}{{ . | markdownify }}{{ end }}" name="message" required data-validation-required-message="{{ with .Site.Params.contact.form.message.warning }}{{ . | markdownify }}{{ end }}"></textarea>
+                                <textarea class="form-control" aria-label="Please enter your message." placeholder="{{ with .Site.Params.contact.form.message.text }}{{ . | markdownify }}{{ end }}" name="message" required data-validation-required-message="{{ with .Site.Params.contact.form.message.warning }}{{ . | markdownify }}{{ end }}"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>

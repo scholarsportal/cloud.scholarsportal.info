@@ -200,46 +200,57 @@ googleAnalytics = ""
     	[[params.clients]]
     		logo = "Carleton.jpg"
     		link = "http://carleton.ca/"
+    		alt = "Carleton University"
 
     	[[params.clients]]
     		logo = "Guelph.jpg"
     		link = "http://www.uoguelph.ca/"
+    		alt = "University of Guelph"
 
     	[[params.clients]]
     		logo = "Laurier.png"
     		link = "https://www.wlu.ca/"
+    		alt = "Wilfrid Laurier University"
 
     	[[params.clients]]
     		logo = "McMaster.jpg"
     		link = "http://www.mcmaster.ca/"
+    		alt = "McMaster University"
 
     	[[params.clients]]
     		logo = "Ottawa.png"
     		link = "https://www.uottawa.ca"
+    		alt = "University of Ottawa"
 
     	[[params.clients]]
     		logo = "Queens.png"
     		link = "http://www.queensu.ca/"
+    		alt = "Queen's University"
 
     	[[params.clients]]
     		logo = "Ryerson.png"
     		link = "http://www.ryerson.ca/index.html"
+    		alt = "Ryerson University"
 
     	[[params.clients]]
     		logo = "Toronto.png"
     		link = "https://www.utoronto.ca/"
+    		alt = "University of Toronto"
 
     	[[params.clients]]
     		logo = "Waterloo.png"
     		link = "https://uwaterloo.ca/"
+    		alt = "University of Waterloo"
 
     	[[params.clients]]
     		logo = "Windsor.jpg"
     		link = "http://www.uwindsor.ca/"
+    		alt = "University of Windsor"
 
     	[[params.clients]]
     		logo = "York.png"
     		link = "http://www.yorku.ca/index.html"
+    		alt = "York University"
 
 
 	# Contact section
@@ -277,6 +288,7 @@ googleAnalytics = ""
 		[[params.footer.social]]
 			icon = "fa-twitter"
 			link = "https://twitter.com/scholarsportal"
+			alt = "twitter"
 
 		[[params.footer.quicklinks]]
 			text = "Privacy Policy"

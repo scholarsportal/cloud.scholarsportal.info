@@ -1,7 +1,7 @@
 modalID: 2
 title: Static Websites
 subtitle: Host websites created in Hugo or Jekyll
-img: placeholder.png
-preview: placeholder-preview.png
+img: staticweb.png
+preview: staticweb-preview.png
 category: Use Cases
-description: "[Startup Framework](//designmodo.com/startup/?u=787) is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects. <br><br>You can preview Startup Framework [here](//designmodo.com/startup/?u=787)."
+description: "Using static website generators like [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/), you can use the OLRC to host your website content. Simply build your website, place your files into the OLRC, and make the content public. Your site will then be publicly accessible, without having to worry about managing a web server!"

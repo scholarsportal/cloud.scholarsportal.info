@@ -10,7 +10,11 @@ body {
 }
 
 .text-muted {
-    color: #777;
+    color: #494949;
+}
+
+#contact .text-muted {
+    color: #b6b6b6;
 }
 
 .text-primary {
@@ -127,9 +131,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #94d7f6;
-    color: #424242;
-    background-color: #94d7f6;
+    border-color: #0a92d2;
+    color: #ffffff;
+    background-color: #0a92d2;
 }
 
 .btn-xl:active,
@@ -205,7 +209,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #94d7f6;
+    color: #0a92d2;
 }
 
 .navbar-default .navbar-collapse {
@@ -239,7 +243,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #0074be;
+    color: #0a92d2;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -251,7 +255,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #94d7f6;
+    background-color: #0a92d2;
 }
 
 .ocul img {
