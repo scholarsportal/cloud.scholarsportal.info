@@ -57,6 +57,12 @@
                 </li>
                 {{ end }}
 
+                {{ if .Site.Params.pricing.enable }}
+                <li>
+                    <a class="page-scroll" href="#pricing">{{ with .Site.Params.navigation.pricing }}{{ . | markdownify }}{{ end }}</a>
+                </li>
+                {{ end }}
+
                 {{ if .Site.Params.contact.enable }}
                 <li>
                     <a class="page-scroll" href="#contact">{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</a>
