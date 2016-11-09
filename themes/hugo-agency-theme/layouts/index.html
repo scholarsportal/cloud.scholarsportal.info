@@ -27,6 +27,10 @@
             {{ partial "clients.html" . }}
         {{ end }}
 
+        {{ if .Site.Params.pricing.enable }}
+            {{ partial "pricing.html" . }}
+        {{ end }}
+
         {{ if .Site.Params.contact.enable }}
             {{ partial "contact.html" . }}
         {{ end }}

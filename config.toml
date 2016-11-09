@@ -46,6 +46,7 @@ googleAnalytics = ""
 		portfolio = "Use Cases"
 		team = "Team"
 		clients_list = "Partners"
+		pricing = "Pricing"
 		contact = "Contact"
 		img = "olrc-logo-original.png"
 		
@@ -71,7 +72,7 @@ googleAnalytics = ""
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
 		title = "ONTARIO LIBRARY RESEARCH CLOUD"
-		subtitle = "Libraries are forever. <br />So is your data."
+		subtitle = "Secure & affordable storage for your digital content"
 		buttonText = "Tell me more"
 		
 		[[params.hero.logo]]
@@ -89,17 +90,17 @@ googleAnalytics = ""
             [[params.services.row.list]]
                 icon = "fa-shield"
                 title = "Reliable"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                description = "The OLRC automatically maintains three copies of every file in the cloud in three separate locations across the network. If one of these copies becomes unreadable, a new copy is created by the system from the two remaining good copies."
 
             [[params.services.row.list]]
                 icon = "fa-usd"
                 title = "Affordable"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                description = "Because of the OLRC's replication features, the system does not use expensive hardware based RAID storage to provide high levels of reliability and redundancy. This means that the cost of storage in the OLRC is driven by the cost of commodity storage, which keeps it economical for long-term file storage.  Usage of the ORION high-speed research network that connects Ontario’s universities means that the typical data transfer charges of commercial cloud storage services don't apply."
 
             [[params.services.row.list]]
-                icon = "fa-check"
-                title = "Usable"
-                description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                icon = "fa-lock"
+                title = "Secure"
+                description = "Storage nodes in the OLRC are connected through a private Virtual LAN running on the ORION research network.  None of the replication traffic in the OLRC is travels over the public Internet. Connections to the OLRC use SSL encryption and files stored in the OLRC can be encrypted for further security. All of the storage nodes in the OLRC are housed in secure data centers at universities across the province. Authentication is managed through the OpenStack Keystone service."
 
     # Features section
 	[params.about]
@@ -122,14 +123,15 @@ googleAnalytics = ""
 			title = "Swiftbrowser"
 			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
+
 		[[params.about.events]]
-			img = "owncloud.png"
-			title = "ownCloud"
+			img = "archivematica.png"
+			title = "Archivematica"
 			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
 		[[params.about.events]]
-			img = "orion.png"
-			title = "ORION"
+			img = "owncloud.png"
+			title = "ownCloud"
 			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
 
 
@@ -148,6 +150,13 @@ googleAnalytics = ""
             date = "Date"
             category = "Category"
             buttonText = "Close project"
+
+    # Pricing section
+    [params.pricing]
+    	enable = true
+    	title = "Pricing"
+    	subtitle = "How much does the OLRC cost?"
+    	table = "testing"
 
 
 	# Team section (disabled)
