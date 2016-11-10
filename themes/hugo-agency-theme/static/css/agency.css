@@ -747,6 +747,20 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
+table th {
+    font-size: 18px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+table td {
+    font-size: 16px;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.tab-indent {
+    text-indent: 1.5em;
+}
+
 section.clients img {
     margin: 50px auto;
 }

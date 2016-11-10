@@ -49,7 +49,7 @@ googleAnalytics = ""
 		pricing = "Pricing"
 		contact = "Contact"
 		img = "olrc-logo-original.png"
-		
+
     # Add custom links. Those can be pre- and postpended to the default menu above.
     # Use the weight attribute to order your custom links. Uncomment the example
     # below and replace the values with your own.
@@ -74,7 +74,7 @@ googleAnalytics = ""
 		title = "ONTARIO LIBRARY RESEARCH CLOUD"
 		subtitle = "Secure & affordable storage for your digital content"
 		buttonText = "Tell me more"
-		
+
 		[[params.hero.logo]]
 			img = "olrc-logo-original.png"
 
@@ -151,13 +151,11 @@ googleAnalytics = ""
             category = "Category"
             buttonText = "Close project"
 
-    # Pricing section
+    # Pricing section - see layouts/partials/pricing.html
     [params.pricing]
     	enable = true
     	title = "Pricing"
     	subtitle = "How much does the OLRC cost?"
-    	table = "testing"
-
 
 	# Team section (disabled)
 	[params.team]
@@ -202,6 +200,7 @@ googleAnalytics = ""
     [params.clients_list]
         enable = true
         title="Participating Schools"
+        subtitle="The following institutions contributed financially and in kind to the development of the OLRC"
 
     	# All the clients' logos are stored under 'static/img/logos'.
     	# Replace them with your clients's logos.
@@ -285,7 +284,6 @@ googleAnalytics = ""
 		[params.contact.form.message]
 			text = "Your Message *"
 			warning = "Please enter a message."
-
 
 	# Footer section
 	[params.footer]

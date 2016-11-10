@@ -1,17 +1,66 @@
 {{ "<!-- Pricing Section -->" | safeHTML }}
 <section id="pricing" class="bg-light-gray">
     <div class="container">
+
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">{{ with .Site.Params.pricing.title }}{{ . | markdownify }}{{ end }}</h2>
                 <h3 class="section-subheading text-mutedwith ">{{ with .Site.Params.pricing.subtitle }}{{ . | markdownify }}{{ end }}</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4">  
-                {{ with .Site.Params.pricing.table }}{{ . | markdownify }}
-            </div>
-            {{ end }}
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th>Service</th>
+                    <th>OCUL Libraries</th> 
+                    <th>Other Canadian Libraries</th>
+                </tr>
+                <tr>
+                    <td>Base Subscription<br>
+                    <div class="tab-indent"><em>Includes:</em></div>
+                    <div class="tab-indent"><em>5TB of object storage</em></div>
+                    <div class="tab-indent"><em>Technical support from Scholars Portal staff</em></div>
+                    <div class="tab-indent"><em>Voting representation on governance group (OCUL only)</em></div>
+                    </td>
+                    <td>$1600/year</td>
+                    <td>$3950/year</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Additional Storage</td>
+                </tr>
+                <tr>
+                    <td class="tab-indent">Per 1 TB</td>
+                    <td>$320/year</td> 
+                    <td>$790/year</td>
+                </tr>
+                <tr>
+                    <td class="tab-indent">Per 10 TB</td>
+                    <td>$3100/year</td> 
+                    <td>$7700/year</td>
+                </tr>
+                <tr>
+                    <td class="tab-indent">Per 50 TB</td>
+                    <td>$15500/year</td> 
+                    <td>$39500/year</td>
+                </tr>
+                <tr>
+                    <td>Data Transfer Services
+                        <div class="tab-indent"><em>From disk or tape to the cloud</em></div>
+                        <div class="tab-indent"><em>Charged per hour of staff time</em></div>
+                    </td>
+                    <td>$75/hour</td>
+                    <td>$100/hour</td>
+                </tr>
+                <tr>
+                    <td>Network Data Transfer Fees</td>
+                    <td colspan="2">No Charge</td>
+                </tr>
+                <tr>
+                    <td>Tape Transfer</td>
+                    <td colspan="2">Pricing Available on Request</td>
+                </tr>
+            </table>
         </div>
     </div>
 </section>
