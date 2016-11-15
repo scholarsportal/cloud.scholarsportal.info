@@ -8,26 +8,20 @@
                 <h3 class="section-subheading text-mutedwith ">{{ with .Site.Params.pricing.subtitle }}{{ . | markdownify }}{{ end }}</h3>
             </div>
         </div>
-
-        <div class="table-responsive">
-            <table class="table table-bordered table-hover">
+        <div class="table-responsive col-sm-8 col-sm-offset-2">
+            <table class="table">
                 <tr>
-                    <th>Service</th>
+                    <th></th>
                     <th>OCUL Libraries</th> 
                     <th>Other Canadian Libraries</th>
                 </tr>
                 <tr>
-                    <td>Base Subscription<br>
-                    <div class="tab-indent"><em>Includes:</em></div>
-                    <div class="tab-indent"><em>5TB of object storage</em></div>
-                    <div class="tab-indent"><em>Technical support from Scholars Portal staff</em></div>
-                    <div class="tab-indent"><em>Voting representation on governance group (OCUL only)</em></div>
-                    </td>
+                    <td>Base Subscription *</td>
                     <td>$1600/year</td>
                     <td>$3950/year</td>
                 </tr>
                 <tr>
-                    <td colspan="3">Additional Storage</td>
+                    <td colspan="3">Additional Storage:</td>
                 </tr>
                 <tr>
                     <td class="tab-indent">Per 1 TB</td>
@@ -45,10 +39,7 @@
                     <td>$39500/year</td>
                 </tr>
                 <tr>
-                    <td>Data Transfer Services
-                        <div class="tab-indent"><em>From disk or tape to the cloud</em></div>
-                        <div class="tab-indent"><em>Charged per hour of staff time</em></div>
-                    </td>
+                    <td>Data Transfer Services **</td>
                     <td>$75/hour</td>
                     <td>$100/hour</td>
                 </tr>
@@ -61,6 +52,9 @@
                     <td colspan="2">Pricing Available on Request</td>
                 </tr>
             </table>
+            <br>
+            <div>*  Includes 5TB of object storage, technical support from Scholars Portal staff, and voting representation on governance group (OCUL libraries only)</div><br>
+            <div>** From disk or tape to the cloud; Charged per hour of staff time</div>
         </div>
     </div>
 </section>

@@ -757,6 +757,17 @@ table td {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.faq-question {
+    font-size: 18px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
 .tab-indent {
     text-indent: 1.5em;
 }

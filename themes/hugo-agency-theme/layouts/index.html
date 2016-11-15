@@ -31,6 +31,10 @@
             {{ partial "pricing.html" . }}
         {{ end }}
 
+        {{ if .Site.Params.faq.enable }}
+            {{ partial "faq.html" . }}
+        {{ end }}
+
         {{ if .Site.Params.contact.enable }}
             {{ partial "contact.html" . }}
         {{ end }}

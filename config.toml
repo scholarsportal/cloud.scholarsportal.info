@@ -17,8 +17,8 @@ googleAnalytics = ""
 
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Ontario Council of University Libraries (OCUL)"
-	description = ""
+	name = "Ontario Library Research Cloud"
+	description = "The OLRC is a cloud-based storage service of Scholars Portal. Scholars Portal is the technology service of the Ontario Council of University Libraries, a consortium of 21 academic libraries in Ontario, Canada. The OLRC utilizes the open source OpenStack cloud framework to connect a distributed network of storage nodes over the ORION research network."
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -47,6 +47,7 @@ googleAnalytics = ""
 		team = "Team"
 		clients_list = "Partners"
 		pricing = "Pricing"
+		faq = "FAQ"
 		contact = "Contact"
 		img = "olrc-logo-original.png"
 
@@ -95,18 +96,23 @@ googleAnalytics = ""
             [[params.services.row.list]]
                 icon = "fa-usd"
                 title = "Affordable"
-                description = "Because of the OLRC's replication features, the system does not use expensive hardware based RAID storage to provide high levels of reliability and redundancy. This means that the cost of storage in the OLRC is driven by the cost of commodity storage, which keeps it economical for long-term file storage.  Usage of the ORION high-speed research network that connects Ontario’s universities means that the typical data transfer charges of commercial cloud storage services don't apply."
+                description = "The OLRC keeps costs low by taking advantage of economical commodity storage and the ORION high-speed network that connects Ontario’s universities, thereby eliminating the data transfer charges typical of commercial cloud storage services."
 
             [[params.services.row.list]]
                 icon = "fa-lock"
                 title = "Secure"
-                description = "Storage nodes in the OLRC are connected through a private Virtual LAN running on the ORION research network.  None of the replication traffic in the OLRC is travels over the public Internet. Connections to the OLRC use SSL encryption and files stored in the OLRC can be encrypted for further security. All of the storage nodes in the OLRC are housed in secure data centers at universities across the province. Authentication is managed through the OpenStack Keystone service."
+                description = "Storage nodes in the OLRC are connected through the private ORION research network. None of the OLRC traffic travels over the public internet, and connections to the OLRC use SSL encryption. Storage nodes in the OLRC are housed in secure data centers at universities across the province."
+
+            [[params.services.row.list]]
+                icon = "fa-exchange"
+                title = "Flexible"
+                description = "The OLRC stores and reads files using simple HTTP protocols, meaning that it can be integrated into a variety of workflows and applications, and accessed from any Internet-connected device for easy file management."
 
     # Features section
 	[params.about]
         enable = true
 		title = "Features"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
+		subtitle = ""
 		endpoint = "[<br>Contact Us!](#contact)"
 
 		# The events will be listed from the top to the bottom.
@@ -116,23 +122,22 @@ googleAnalytics = ""
 		[[params.about.events]]
 			img = "openstack.png"
 			title = "OpenStack"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			description = "The OLRC is based on [OpenStack](https://www.openstack.org/software/), an open-source software platform for cloud computing. OpenStack is actively developed by hundreds of developers globally, and used by public cloud providers, corporations, and universities to deliver enterprise cloud services. OpenStack consists of interrelated components that control diverse, multi-vendor hardware pools of processing, storage, and networking resources."
 
 		[[params.about.events]]
 			img = "logo.png"
 			title = "Swiftbrowser"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
+			description = "The OLRC can easily be accessed via a web application developed by Scholars Portal called SwiftBrowser. SwiftBrowser allows users to upload files to OLRC containers through a simple drag and drop web interface. SwiftBrowser is available as a hosted application through Scholars Portal, or can be downloaded from Github and installed locally."
 
 		[[params.about.events]]
 			img = "archivematica.png"
 			title = "Archivematica"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			description = "[Archivematica](https://www.archivematica.org/en/) is an open source digital preservation workflow management application. Through its Storage Service module, Swift containers can be designated as storage destinations for both AIPs and DIPs. This allows the OLRC to be integrated into Archivematica preservation workflows, and in turn, Archivematica integrates with repository tools such as Dataverse and Islandora."
 
 		[[params.about.events]]
 			img = "owncloud.png"
 			title = "ownCloud"
-			description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+			description = "Developed as an open source alternative to tools like Dropbox, [ownCloud](https://owncloud.org/) is an application that allows users to access their files on the web. Local folders can be synchronized with folders stored in the cloud, and files can be uploaded to the cloud using standard file browser services of Windows or OS X. ownCloud can be configured to connect to the OLRC through its support for the OpenStack Swift API. Scholars Portal will be offering ownCloud as a service in 2017. However, it can also be installed by local system administrators."
 
 
 	# Use Cases section
@@ -149,13 +154,63 @@ googleAnalytics = ""
             client = "Client"
             date = "Date"
             category = "Category"
-            buttonText = "Close project"
+            buttonText = "Close"
 
     # Pricing section - see layouts/partials/pricing.html
     [params.pricing]
     	enable = true
     	title = "Pricing"
     	subtitle = "How much does the OLRC cost?"
+
+   	# FAQ section
+   	[params.faq]
+   		enable = true
+   		title = "FAQ"
+   		subtitle = "Frequently Asked Questions"
+
+   		[[params.questions]]
+   		question = "What is the Ontario Library Research Cloud (OLRC)?"
+   		answer = "The OLRC is a distributed object storage network managed by Scholars Portal on behalf of OCUL member libraries. Storage nodes are geographically distributed among 5 data centers located at member institutions. Content in the network is replicated automatically among storage nodes at these five data centers."
+
+   		[[params.questions]]
+   		question = "How do I access the Cloud?"
+   		answer = "Access to the cloud is restricted by username/password and IP address.  Content can be transferred to and from the cloud using the OpenStack Swift API or any tool that implements this API."
+
+   		[[params.questions]]
+   		question = "What can I store in the Cloud?"
+   		answer = "The cloud storage service is intended to provide OCUL libraries with an economical option for the long-term storage of digital objects. A digital object can be any kind of file, but will typically be some kind of content object – a geospatial file, a digital video, a PDF, a scanned image – that is not likely to change over its lifespan. Ideal uses of the Cloud are for storage of large volumes of content that would be too expensive to store on a file server, but that may need to be accessed often enough to make tape storage problematic. Cloud storage may not always the best option for your storage needs. Please contact Scholars Portal if you have questions about your use cases."
+
+   		[[params.questions]]
+   		question = "What do I pay for storage?"
+   		answer = "The OCUL Storage Cloud is a subscription service. Subscribing libraries will be charged for the storage they have consumed in the cloud on an annual basis. Fees will be calculated based on each TB of storage used, rounded up to the nearest TB, as of May 1st of each year. A base fee calculated on 5 TB of storage will apply to each subscriber. Invoices for storage will be issued by the OCUL Office to the subscribing library."
+
+   		[[params.questions]]
+   		question = "What kinds of provisions does the OLRC make for the security of my files?"
+   		answer = "Network nodes in the Storage Cloud are connected through ORION, the high-speed research network that is supported by Ontario’s universities. Data is transferred between nodes over a private network within the ORION infrastructure.  All uploads and downloads from the Cloud are secured via SSL."
+
+   		[[params.questions]]
+   		question = "Are files in the cloud also backed up to tape?"
+   		answer = "Backup of data within the cloud relies on replication of data between nodes. Unless specifically requested, tape backup is not provided as part of the subscription fee. Please contact Scholars Portal to discuss options for tape backup or backup into a secondary cloud."
+
+   		[[params.questions]]
+   		question = "Do I have to pay any network fees for transferring data to and from the cloud?"
+   		answer = "No charges will be levied for network use, either for uploads or downloads to the Cloud. However, this policy may be reviewed if ORION or campus network providers begin to charge the OLRC partners for network connectivity. If you need to transfer large volumes of data from legacy media (tape or disk) and want to have this done by Scholars Portal, this work will be charged on an hourly rate."
+
+   		[[params.questions]]
+   		question = "How is the price set for storage?"
+   		answer = "The OCUL Storage Cloud is governed by a committee reporting to the OCUL Executive that has responsibility for reviewing subscription fees on an annual basis. Fees are calculated to recover the cost of hardware and staff needed to support and grow the service. As these costs change over time, the per TB subscription fee will be adjusted. Costs will be reviewed by the Cloud Storage Committee for approval by the OCUL Executive and presentation at the fall Directors’ meeting. The new fees will be applied at the beginning of the immediately following fiscal year, normally May 1 for universities in Ontario."
+
+   		[[params.questions]]
+   		question = "What other benefits do I get through subscription?"
+   		answer = "User support will be provided to all subscribing libraries through Scholars Portal."
+
+   		[[params.questions]]
+   		question = "What if I’m not sure this is the right option for my institution?"
+   		answer = "If you need some time to figure out if object storage is the right solution for your needs or some time to figure out how to integrate it with your content workflows, you can ask Scholars Portal staff to set you up with a trial subscription. This will give you access to 5 TB of storage, technical support from Scholars Portal staff, as well as non-voting representation on the governance committee for the Cloud. Trial subscriptions normally run for 6 months."
+
+   		[[params.questions]]
+   		question = "What happens if OCUL decides to end this service?"
+   		answer = "Final authority for the operation of the Cloud service rests with the OCUL member libraries. If a decision is made to terminate the service, all subscribing members will be provided with at least 6 months notice and assistance from Scholars Portal staff to extract and transfer their data to another cloud provider or to tape or portable hard disk."
 
 	# Team section (disabled)
 	[params.team]
@@ -200,7 +255,7 @@ googleAnalytics = ""
     [params.clients_list]
         enable = true
         title="Participating Schools"
-        subtitle="The following institutions contributed financially and in kind to the development of the OLRC"
+        subtitle="The following institutions contributed financially and in kind to the development of the OLRC."
 
     	# All the clients' logos are stored under 'static/img/logos'.
     	# Replace them with your clients's logos.
