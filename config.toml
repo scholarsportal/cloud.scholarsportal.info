@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://cloud.scholarsportal.info"
+baseurl = "https://staticdev.scholarsportal.info/olrc-public/"
 title = "Ontario Library Research Cloud"
 languageCode = "en-us"
 theme = "hugo-agency-theme"
