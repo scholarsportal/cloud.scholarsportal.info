@@ -101,12 +101,12 @@ googleAnalytics = ""
             [[params.services.row.list]]
                 icon = "fa-lock"
                 title = "Secure"
-                description = "Storage nodes in the OLRC are connected through the private ORION research network. None of the OLRC traffic travels over the public internet, and connections to the OLRC use SSL encryption. Storage nodes in the OLRC are housed in secure data centers at universities across the province."
+                description = "Storage nodes in the OLRC are connected through the private ORION research network, and are housed in university owned and operated data centers across Ontario. None of the traffic travels over the public internet, and connections use SSL encryption."
 
             [[params.services.row.list]]
                 icon = "fa-exchange"
                 title = "Flexible"
-                description = "The OLRC stores and reads files using simple HTTP protocols, meaning that it can be integrated into a variety of workflows and applications, and accessed from any Internet-connected device for easy file management."
+                description = "The OLRC stores and reads files using simple HTTP protocols. This means that it can be integrated into a wide variety of workflows and applications, and accessed from any Internet-connected device for easy file management."
 
     # Features section
 	[params.about]
