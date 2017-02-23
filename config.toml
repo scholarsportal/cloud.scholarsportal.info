@@ -18,7 +18,7 @@ googleAnalytics = "UA-9010354-10"
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
 	name = "Ontario Library Research Cloud"
-	description = "The OLRC is a cloud-based storage service of Scholars Portal. Scholars Portal is the technology service of the Ontario Council of University Libraries, a consortium of 21 academic libraries in Ontario, Canada. The OLRC utilizes the open source OpenStack cloud framework to connect a distributed network of storage nodes over the ORION research network."
+	description = "The OLRC is a cloud-based storage service of Scholars Portal. Scholars Portal is the technology service of the Ontario Council of University Libraries, a consortium of 21 academic libraries in Ontario, Canada. The OLRC utilizes the open-source OpenStack cloud framework to connect a distributed network of storage nodes over the ORION research network."
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -34,7 +34,7 @@ googleAnalytics = "UA-9010354-10"
 	email = "olrc@scholarsportal.info"
 
     # Link custom assets relative to /static
-    custom_css = []
+    custom_css = ["css/custom.css"]
     custom_js  = []
 
 
@@ -82,7 +82,7 @@ googleAnalytics = "UA-9010354-10"
 
 	# Benefits section
 	[params.services]
-        enable = true
+    enable = true
 		title = "Benefits"
 		subtitle = "Why Should I Use the OLRC?"
 
@@ -110,7 +110,7 @@ googleAnalytics = "UA-9010354-10"
 
     # Features section
 	[params.about]
-        enable = true
+    enable = true
 		title = "Features"
 		subtitle = ""
 		endpoint = "[<br>Contact Us!](#contact)"
@@ -122,7 +122,7 @@ googleAnalytics = "UA-9010354-10"
 		[[params.about.events]]
 			img = "openstack.png"
 			title = "OpenStack"
-			description = "The OLRC is based on [OpenStack](https://www.openstack.org/software/), an open-source software platform for cloud computing. OpenStack is actively developed by hundreds of developers globally, and used by public cloud providers, corporations, and universities to deliver enterprise cloud services. OpenStack consists of interrelated components that control diverse, multi-vendor hardware pools of processing, storage, and networking resources."
+			description = "The OLRC is based on [OpenStack](https://www.openstack.org/software/), an open-source software platform for cloud computing. OpenStack is actively developed by hundreds of developers globally, and used by public cloud providers, corporations, and universities to deliver enterprise cloud services."
 
 		[[params.about.events]]
 			img = "logo.png"
@@ -132,17 +132,17 @@ googleAnalytics = "UA-9010354-10"
 		[[params.about.events]]
 			img = "archivematica.png"
 			title = "Archivematica"
-			description = "[Archivematica](https://www.archivematica.org/en/) is an open source digital preservation workflow management application. Through its Storage Service module, Swift containers can be designated as storage destinations for both AIPs and DIPs. This allows the OLRC to be integrated into Archivematica preservation workflows, and in turn, Archivematica integrates with repository tools such as Dataverse and Islandora."
+			description = "[Archivematica](https://www.archivematica.org/en/) is an open-source digital preservation workflow management application. Through its Storage Service module, Swift containers can be designated as storage destinations for both AIPs and DIPs. This allows the OLRC to be integrated into Archivematica preservation workflows, and in turn, Archivematica integrates with repository tools."
 
 		[[params.about.events]]
 			img = "owncloud.png"
 			title = "ownCloud"
-			description = "Developed as an open source alternative to tools like Dropbox, [ownCloud](https://owncloud.org/) is an application that allows users to access their files on the web. Local folders can be synchronized with folders stored in the cloud, and files can be uploaded to the cloud using standard file browser services of Windows or OS X. ownCloud can be configured to connect to the OLRC through its support for the OpenStack Swift API. Scholars Portal will be offering ownCloud as a service in 2017. However, it can also be installed by local system administrators."
+			description = "Developed as an open-source alternative to tools like Dropbox, [ownCloud](https://owncloud.org/) is an application that allows users to access their files on the web. Local folders can be synchronized with folders stored in the cloud, and files can be uploaded to the cloud using standard file browser services. ownCloud can be configured to connect to the OLRC through the OpenStack Swift API. Scholars Portal will be offering ownCloud as a service in 2017, and it can also be installed by local system administrators."
 
 
 	# Use Cases section
 	[params.portfolio]
-        enable = true
+    enable = true
 		# All projects defined in their own files. You can find example projects
 		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
 		# at the root of this Hugo site.
@@ -151,10 +151,10 @@ googleAnalytics = "UA-9010354-10"
 		subtitle = "How Can I Use the OLRC?"
 
 		[params.portfolio.modal]
-            client = "Client"
-            date = "Date"
-            category = "Category"
-            buttonText = "Close"
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close"
 
     # Pricing section - see layouts/partials/pricing.html
     [params.pricing]
@@ -214,7 +214,7 @@ googleAnalytics = "UA-9010354-10"
 
 	# Team section (disabled)
 	[params.team]
-        enable = false
+    enable = false
 		title = "Our amazing team"
 		subtitle = "Lorem ipsum dolor sit amet consectetur."
 		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
@@ -225,26 +225,6 @@ googleAnalytics = "UA-9010354-10"
 			img = "1.jpg"
 			name = "Kay Garland"
 			position = "Lead Designer"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
-
-		[[params.team.members]]
-			img = "2.jpg"
-			name = "Larry Parker"
-			position = "Lead Marketer"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
-
-		[[params.team.members]]
-			img = "3.jpg"
-			name = "Diana Pertersen"
-			position = "Lead Developer"
 			social = [
 				["fa-twitter", "#"],
 				["fa-facebook", "#"],
@@ -315,10 +295,9 @@ googleAnalytics = "UA-9010354-10"
     		link = "http://www.yorku.ca/index.html"
     		alt = "York University"
 
-
 	# Contact section
 	[params.contact]
-        enable = true
+    enable = true
 		title = "Contact us"
 		subtitle  = "Get In Touch!"
 		buttonText = "Send message"
@@ -342,7 +321,7 @@ googleAnalytics = "UA-9010354-10"
 
 	# Footer section
 	[params.footer]
-        enable = true
+    enable = true
 		copyright = "&copy; Ontario Council of University Libraries"
 		logo = "ocul.png"
 		link = "http://ocul.on.ca"
@@ -351,10 +330,6 @@ googleAnalytics = "UA-9010354-10"
 			icon = "fa-twitter"
 			link = "https://twitter.com/scholarsportal"
 			alt = "twitter"
-
-		[[params.footer.quicklinks]]
-			text = "Privacy Policy"
-			link = "#"
 
 		[[params.footer.quicklinks]]
 			text = "Terms of Use"

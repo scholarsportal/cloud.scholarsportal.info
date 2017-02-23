@@ -649,6 +649,8 @@ section h3.section-subheading {
     }
 }
 
+/*
+
 .flexbox {
   display: -webkit-box;
   display: -moz-box;
@@ -664,6 +666,8 @@ section h3.section-subheading {
 .flexbox-center {
   justify-content: center;
 }
+
+*/
 
 .team-member {
     margin-bottom: 50px;
@@ -959,5 +963,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #fed136;
-}-
+    -webkit-tap-highlight-color: #fed136;
+}
