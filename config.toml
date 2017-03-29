@@ -1,5 +1,7 @@
 # Site settings
-baseurl = "https://staticdev.scholarsportal.info/olrc-public/"
+#baseurl = "http://localhost/OLRC_site/public/"
+#baseurl = "https://staticdev.scholarsportal.info/olrc-public/"
+baseurl = "https://cloud.scholarsportal.info/"
 title = "Ontario Library Research Cloud"
 languageCode = "en-us"
 theme = "hugo-agency-theme"
@@ -330,7 +332,3 @@ googleAnalytics = "UA-9010354-10"
 			icon = "fa-twitter"
 			link = "https://twitter.com/scholarsportal"
 			alt = "twitter"
-
-		[[params.footer.quicklinks]]
-			text = "Terms of Use"
-			link = "#"
