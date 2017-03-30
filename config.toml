@@ -236,7 +236,7 @@ googleAnalytics = "UA-9010354-10"
 	# Partners section
     [params.clients_list]
         enable = true
-        title="Participating Schools"
+        title="Participating Institutions"
         subtitle="The following institutions contributed financially and in kind to the development of the OLRC."
 
     	# All the clients' logos are stored under 'static/img/logos'.
@@ -296,6 +296,20 @@ googleAnalytics = "UA-9010354-10"
     		logo = "York.png"
     		link = "http://www.yorku.ca/index.html"
     		alt = "York University"
+
+      [params.subclients_list]
+        title=""
+        subtitle="The OLRC runs on network services provided by GTANet and ORION."
+
+      [[params.subclient1]]
+        logo = "GTAnet.png"
+        link = "http://www.gtanet.ca/"
+        alt = "GTAnet"
+
+      [[params.subclient2]]
+        logo = "Orion.png"
+        link = "http://www.orion.on.ca/"
+        alt = "Orion"
 
 	# Contact section
 	[params.contact]
