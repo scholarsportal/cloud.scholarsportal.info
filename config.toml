@@ -339,8 +339,11 @@ googleAnalytics = "UA-9010354-10"
 	[params.footer]
     enable = true
 		copyright = "&copy; Ontario Council of University Libraries"
+    secondcopyright = "Scholars Portal"
 		logo = "ocul.png"
+    secondlogo = "sp.png"
 		link = "http://ocul.on.ca"
+    secondlink = "http://scholarsportal.info/"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"
