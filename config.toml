@@ -170,49 +170,60 @@ googleAnalytics = "UA-9010354-10"
    		title = "FAQ"
    		subtitle = "Frequently Asked Questions"
 
-   		[[params.questions]]
+   		[[params.faq.questions]]
    		question = "What is the Ontario Library Research Cloud (OLRC)?"
    		answer = "The OLRC is a distributed object storage network managed by Scholars Portal on behalf of OCUL member libraries. Storage nodes are geographically distributed among 5 data centers located at member institutions. Content in the network is replicated automatically among storage nodes at these five data centers."
+		id = "01"
 
-   		[[params.questions]]
+   		[[params.faq.questions]]
    		question = "How do I access the Cloud?"
    		answer = "Access to the cloud is restricted by username/password and IP address.  Content can be transferred to and from the cloud using the OpenStack Swift API or any tool that implements this API."
+		id = "02"
 
-   		[[params.questions]]
+   		[[params.faq.questions]]
    		question = "What can I store in the Cloud?"
    		answer = "The cloud storage service is intended to provide OCUL libraries with an economical option for the long-term storage of digital objects. A digital object can be any kind of file, but will typically be some kind of content object – a geospatial file, a digital video, a PDF, a scanned image – that is not likely to change over its lifespan. Ideal uses of the Cloud are for storage of large volumes of content that would be too expensive to store on a file server, but that may need to be accessed often enough to make tape storage problematic. Cloud storage may not always the best option for your storage needs. Please contact Scholars Portal if you have questions about your use cases."
+		id = "03"
 
-   		[[params.questions]]
+   		[[params.faq.questions]]
    		question = "How much do I pay for storage?"
    		answer = "The OCUL Storage Cloud is a subscription service. Subscribing libraries will be charged for the storage they have consumed in the cloud on an annual basis. Fees will be calculated based on each TB of storage used, rounded up to the nearest TB, as of May 1st of each year. A base fee calculated on 5 TB of storage will apply to each subscriber. Invoices for storage will be issued by the OCUL Office to the subscribing library."
+		id = "04"
 
-      [[params.questions]]
-      question = "How is the price set for storage?"
-      answer = "The OCUL Storage Cloud is governed by a committee reporting to the OCUL Executive that has responsibility for reviewing subscription fees on an annual basis. Fees are calculated to recover the cost of hardware and staff needed to support and grow the service. As these costs change over time, the per TB subscription fee will be adjusted. Costs will be reviewed by the Cloud Storage Committee for approval by the OCUL Executive and presentation at the fall Directors’ meeting. The new fees will be applied at the beginning of the immediately following fiscal year, normally May 1 for universities in Ontario."
+		[[params.faq.questions]]
+		question = "How is the price set for storage?"
+		answer = "The OCUL Storage Cloud is governed by a committee reporting to the OCUL Executive that has responsibility for reviewing subscription fees on an annual basis. Fees are calculated to recover the cost of hardware and staff needed to support and grow the service. As these costs change over time, the per TB subscription fee will be adjusted. Costs will be reviewed by the Cloud Storage Committee for approval by the OCUL Executive and presentation at the fall Directors’ meeting. The new fees will be applied at the beginning of the immediately following fiscal year, normally May 1 for universities in Ontario."
+		id = "05"
 
-      [[params.questions]]
-      question = "Do I have to pay any network fees for transferring data to and from the cloud?"
-      answer = "No charges will be levied for network use, either for uploads or downloads to the Cloud. However, this policy may be reviewed if ORION or campus network providers begin to charge the OLRC partners for network connectivity. If you need to transfer large volumes of data from legacy media (tape or disk) and want to have this done by Scholars Portal, this work will be charged on an hourly rate."
+		[[params.faq.questions]]
+		question = "Do I have to pay any network fees for transferring data to and from the cloud?"
+		answer = "No charges will be levied for network use, either for uploads or downloads to the Cloud. However, this policy may be reviewed if ORION or campus network providers begin to charge the OLRC partners for network connectivity. If you need to transfer large volumes of data from legacy media (tape or disk) and want to have this done by Scholars Portal, this work will be charged on an hourly rate."
+		id = "06"
 
-      [[params.questions]]
-      question = "What other benefits do I get through subscription?"
-      answer = "User support will be provided to all subscribing libraries through Scholars Portal."
+		[[params.faq.questions]]
+		question = "What other benefits do I get through subscription?"
+		answer = "User support will be provided to all subscribing libraries through Scholars Portal."
+		id = "07"
 
-      [[params.questions]]
-      question = "What if I’m not sure this is the right option for my institution?"
-      answer = "If you need some time to figure out if object storage is the right solution for your needs, or some time to figure out how to integrate it with your content workflows, you can ask Scholars Portal staff to set you up with a trial subscription. This will give you access to 5 TB of storage, technical support from Scholars Portal staff, as well as non-voting representation on the governance committee for the Cloud. Trial subscriptions normally run for 6 months."
+		[[params.faq.questions]]
+		question = "What if I’m not sure this is the right option for my institution?"
+		answer = "If you need some time to figure out if object storage is the right solution for your needs, or some time to figure out how to integrate it with your content workflows, you can ask Scholars Portal staff to set you up with a trial subscription. This will give you access to 5 TB of storage, technical support from Scholars Portal staff, as well as non-voting representation on the governance committee for the Cloud. Trial subscriptions normally run for 6 months."
+		id = "08"
 
-   		[[params.questions]]
-   		question = "What kinds of provisions does the OLRC make for the security of my files?"
-   		answer = "Network nodes in the Storage Cloud are connected through ORION, the high-speed research network that is supported by Ontario’s universities. Data is transferred between nodes over a private network within the ORION infrastructure.  All uploads and downloads from the Cloud are secured via SSL."
+		[[params.faq.questions]]
+		question = "What kinds of provisions does the OLRC make for the security of my files?"
+		answer = "Network nodes in the Storage Cloud are connected through ORION, the high-speed research network that is supported by Ontario’s universities. Data is transferred between nodes over a private network within the ORION infrastructure.  All uploads and downloads from the Cloud are secured via SSL."
+		id = "09"
 
-   		[[params.questions]]
+   		[[params.faq.questions]]
    		question = "Are files in the cloud also backed up to tape?"
    		answer = "Backup of data within the cloud relies on replication of data between nodes. Unless specifically requested, tape backup is not provided as part of the subscription fee. Please contact Scholars Portal to discuss options for tape backup or backup into a secondary cloud."
+		id = "10"
 
-   		[[params.questions]]
+   		[[params.faq.questions]]
    		question = "What happens if OCUL decides to end this service?"
    		answer = "Final authority for the operation of the Cloud service rests with the OCUL member libraries. If a decision is made to terminate the service, all subscribing members will be provided with at least 6 months notice and assistance from Scholars Portal staff to extract and transfer their data to another cloud provider or to tape or portable hard disk."
+		id = "11"
 
 	# Team section (disabled)
 	[params.team]
