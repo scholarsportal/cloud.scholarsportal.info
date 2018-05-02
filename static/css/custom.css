@@ -1,5 +1,5 @@
 /*!
- * Custom CSS 
+ * Custom CSS
  */
 
 body {
@@ -380,6 +380,10 @@ header .intro-text .intro-heading {
     background: rgba(0, 116, 190,.9);
 }
 
+.portfolio-modal .modal-content p:not(.item-intro) {
+    text-align: left;
+}
+
 .timeline>li .timeline-image {
     background-color: #fff;
 }
@@ -439,6 +443,10 @@ section#contact .form-control:focus {
 
 ul.social-buttons {
     margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    background-color: #5a5b5e;
 }
 
 ul.social-buttons li a:hover,
