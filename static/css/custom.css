@@ -384,6 +384,10 @@ header .intro-text .intro-heading {
     text-align: left;
 }
 
+#portfolio .portfolio-item .portfolio-link img {
+    height: 100%;
+}
+
 .timeline>li .timeline-image {
     background-color: #fff;
 }

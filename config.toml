@@ -6,7 +6,8 @@ title = "Ontario Library Research Cloud"
 languageCode = "en-us"
 theme = "hugo-agency-theme"
 # Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-9010354-10"
+#googleAnalytics = "UA-9010354-10"
+googleAnalytics = ""
 
 [params]
 
@@ -39,6 +40,14 @@ googleAnalytics = "UA-9010354-10"
     custom_css = ["css/custom.css"]
     custom_js  = []
 
+	# Optional piwik tracking
+	[params.analytics.piwik]
+	  URL = "https://analytics.scholarsportal.info"
+	  ID = "32"
+	#  # Track all subdomains with "*.example.com"
+	#  domain = ""
+	#  # Optional integrity check hash
+	#  hash = ""
 
 	# Navigation
 	[params.navigation]
