@@ -9,6 +9,11 @@ theme = "hugo-agency-theme"
 #googleAnalytics = "UA-9010354-10"
 googleAnalytics = ""
 
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true
+
 [params]
 
 	# You can use Markdown syntax for urls [text](//url.to/source) or
@@ -138,7 +143,7 @@ googleAnalytics = ""
 		[[params.about.events]]
 			img = "logo.png"
 			title = "Swiftbrowser"
-			description = "The OLRC can easily be accessed via a web application developed by Scholars Portal called SwiftBrowser. SwiftBrowser allows users to upload files to OLRC containers through a simple drag and drop web interface. SwiftBrowser is available as a hosted application through Scholars Portal, or can be downloaded from Github and installed locally."
+			description = "The OLRC can easily be accessed via a web application developed by Scholars Portal called SwiftBrowser. SwiftBrowser allows users to upload files to OLRC containers through a simple drag and drop web interface. SwiftBrowser is available as a hosted application through Scholars Portal, or can be downloaded from GitHub and installed locally."
 
 		[[params.about.events]]
 			img = "archivematica.png"
@@ -148,8 +153,12 @@ googleAnalytics = ""
 		[[params.about.events]]
 			img = "owncloud.png"
 			title = "ownCloud"
-			description = "Developed as an open-source alternative to tools like Dropbox, [ownCloud](https://owncloud.org/) is an application that allows users to access their files on the web. Local folders can be synchronized with folders stored in the cloud, and files can be uploaded to the cloud using standard file browser services. ownCloud can be configured to connect to the OLRC through the OpenStack Swift API. Scholars Portal will be offering ownCloud as a service in 2017, and it can also be installed by local system administrators."
+			description = "Developed as an open-source alternative to tools like Dropbox, [ownCloud](https://owncloud.org/) is an application that allows users to access their files on the web. Local folders can be synchronized with folders stored in the cloud, and files can be uploaded to the cloud using standard file browser services. ownCloud can be configured to connect to the OLRC through the OpenStack Swift API. Scholars Portal is currently offering ownCloud as a pilot service, and it can also be installed by local system administrators."
 
+		[[params.about.events]]
+			img = "duracloud.png"
+			title = "DuraCloud"
+			description = "[DuraCloud](https://duraspace.org/duracloud/) is an open-source technology used to manage files in a variety of storage systems. DuraCloud is developed by DuraSpace and has been modified to run locally by Scholars Portal and the University of Toronto Libraries as the future frontend for the OLRC. This project has been made possible by support from CANARIE."
 
 	# Use Cases section
 	[params.portfolio]
@@ -162,10 +171,10 @@ googleAnalytics = ""
 		subtitle = "How Can I Use the OLRC?"
 
 		[params.portfolio.modal]
-      client = "Client"
-      date = "Date"
-      category = "Category"
-      buttonText = "Close"
+			client = "Client"
+			date = "Date"
+			category = "Category"
+			buttonText = "Close"
 
     # Pricing section - see layouts/partials/pricing.html
     [params.pricing]
@@ -186,7 +195,7 @@ googleAnalytics = ""
 
    		[[params.faq.questions]]
    		question = "How do I access the Cloud?"
-   		answer = "Access to the cloud is restricted by username/password and IP address.  Content can be transferred to and from the cloud using the OpenStack Swift API or any tool that implements this API."
+   		answer = "Access to the cloud is restricted by username/password and IP address. Content can be transferred to and from the cloud using the OpenStack Swift API or any tool that implements this API."
 		id = "02"
 
    		[[params.faq.questions]]
@@ -237,16 +246,16 @@ googleAnalytics = ""
 	# Team section (disabled)
 	[params.team]
     enable = false
-		title = "Our amazing team"
-		subtitle = "Lorem ipsum dolor sit amet consectetur."
-		description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+		title = ""
+		subtitle = ""
+		description = ""
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
-			img = "1.jpg"
-			name = "Kay Garland"
-			position = "Lead Designer"
+			img = ""
+			name = ""
+			position = ""
 			social = [
 				["fa-twitter", "#"],
 				["fa-facebook", "#"],
@@ -319,17 +328,22 @@ googleAnalytics = ""
 
       [params.subclients_list]
         title=""
-        subtitle="The OLRC runs on network services provided by GTANet and ORION."
+        subtitle="The OLRC runs on network services provided by GTANet and ORION. Additional funding support has been provided by CANARIE."
 
-      [[params.subclient1]]
-        logo = "GTAnet.png"
-        link = "http://www.gtanet.ca/"
-        alt = "GTAnet"
+		[[params.subclient1]]
+			logo = "GTAnet.png"
+			link = "http://www.gtanet.ca/"
+			alt = "GTAnet"
 
-      [[params.subclient2]]
-        logo = "Orion.png"
-        link = "http://www.orion.on.ca/"
-        alt = "Orion"
+		[[params.subclient2]]
+			logo = "Orion.png"
+			link = "http://www.orion.on.ca/"
+			alt = "Orion"
+
+		[[params.subclient3]]
+			logo = "Canarie.png"
+			link = "https://www.canarie.ca/"
+			alt = "CANARIE"
 
 	# Contact section
 	[params.contact]

@@ -4,4 +4,4 @@ subtitle: Host and play video content
 img: video.png
 preview: video-preview.png
 category: Use Cases
-description: "Using some simple HTML, you can host your video content in the OLRC to be played directly in the browser. This means you don't have to rely on external websites to host and manage your video content, and no additional plugins are required."
+description: "Using some basic HTML, you can host your video content in the OLRC to be played directly in the browser. This means you don't have to rely on external websites to host and manage your video content, and no additional plugins are required."

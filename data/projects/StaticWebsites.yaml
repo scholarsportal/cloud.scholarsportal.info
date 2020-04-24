@@ -4,4 +4,4 @@ subtitle: Host static web pages
 img: staticweb.png
 preview: staticweb-preview.png
 category: Use Cases
-description: "Using static website generators like [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/), you can use the OLRC to host your website content. Once properly configured, you can simply build your website, place your files into the OLRC, and make the content public. Your site will then be publicly accessible, without having to worry about managing a web server!"
+description: "Using static website generators like [Jekyll](https://jekyllrb.com/) or [Hugo](https://gohugo.io/), you can use the OLRC to host your website content. Once properly configured, you can build your website, place your files into the OLRC, and make the content public. Your site will then be publicly accessible, without having to worry about managing a web server!"
