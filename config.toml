@@ -45,6 +45,11 @@ googleAnalytics = ""
     custom_css = ["css/custom.css"]
     custom_js  = []
 
+	# 404 error customization
+	[params.error404]
+		heading = "Page not found"
+		text = "Return to [the home page](/)."
+
 	# Optional piwik tracking
 	[params.analytics.piwik]
 	  URL = "https://analytics.scholarsportal.info"
@@ -150,10 +155,10 @@ googleAnalytics = ""
 			title = "Archivematica"
 			description = "[Archivematica](https://www.archivematica.org/en/) is an open-source digital preservation workflow management application. Through its Storage Service module, Swift containers can be designated as storage destinations for both AIPs and DIPs. This allows the OLRC to be integrated into Archivematica preservation workflows, and in turn, Archivematica integrates with repository tools."
 
-		[[params.about.events]]
-			img = "owncloud.png"
-			title = "ownCloud"
-			description = "Developed as an open-source alternative to tools like Dropbox, [ownCloud](https://owncloud.org/) is an application that allows users to access their files on the web. Local folders can be synchronized with folders stored in the cloud, and files can be uploaded to the cloud using standard file browser services. ownCloud can be configured to connect to the OLRC through the OpenStack Swift API. Scholars Portal is currently offering ownCloud as a pilot service, and it can also be installed by local system administrators."
+		#[[params.about.events]]
+		#	img = "owncloud.png"
+		#	title = "ownCloud"
+		#	description = "Developed as an open-source alternative to tools like Dropbox, [ownCloud](https://owncloud.org/) is an application that allows users to access their files on the web. Local folders can be synchronized with folders stored in the cloud, and files can be uploaded to the cloud using standard file browser services. ownCloud can be configured to connect to the OLRC through the OpenStack Swift API. Scholars Portal is currently offering ownCloud as a pilot service, and it can also be installed by local system administrators."
 
 		[[params.about.events]]
 			img = "duracloud.png"
@@ -266,10 +271,15 @@ googleAnalytics = ""
     [params.clients_list]
         enable = true
         title="Participating Institutions"
-        subtitle="The following institutions contributed financially and in kind to the development of the OLRC."
+        subtitle="The following institutions contribute financially and in-kind to the development of the OLRC."
 
     	# All the clients' logos are stored under 'static/img/logos'.
     	# Replace them with your clients's logos.
+
+    	[[params.clients]]
+    		logo = "Algoma.jpg"
+    		link = "https://www.algomau.ca/"
+    		alt = "Algoma University"
 
     	[[params.clients]]
     		logo = "Carleton.jpg"
@@ -290,6 +300,11 @@ googleAnalytics = ""
     		logo = "McMaster.jpg"
     		link = "http://www.mcmaster.ca/"
     		alt = "McMaster University"
+
+    	[[params.clients]]
+    		logo = "OntarioTech.png"
+    		link = "https://ontariotechu.ca/"
+    		alt = "Ontario Tech University"
 
     	[[params.clients]]
     		logo = "Ottawa.png"
