@@ -386,13 +386,13 @@ googleAnalytics = ""
 
 	# Footer section
 	[params.footer]
-    enable = true
+    	enable = true
 		copyright = "&copy; Ontario Council of University Libraries"
-    secondcopyright = "Scholars Portal"
+    	secondcopyright = "Scholars Portal"
 		logo = "ocul.png"
-    secondlogo = "sp.png"
+    	secondlogo = "sp.png"
 		link = "http://ocul.on.ca"
-    secondlink = "http://scholarsportal.info/"
+    	secondlink = "http://scholarsportal.info/"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"
