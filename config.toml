@@ -235,7 +235,7 @@ googleAnalytics = ""
 
 		[[params.faq.questions]]
 		question = "What kinds of provisions does the OLRC make for the security of my files?"
-		answer = "Network nodes in the Storage Cloud are connected through ORION, the high-speed research network that is supported by Ontario’s universities. Data is transferred between nodes over a private network within the ORION infrastructure.  All uploads and downloads from the Cloud are secured via SSL."
+		answer = "Network nodes in the Storage Cloud are connected through ORION, the high-speed research network that is supported by Ontario’s universities. Data is transferred between nodes over a private network within the ORION infrastructure. All uploads and downloads from the Cloud are secured via SSL."
 		id = "09"
 
    		[[params.faq.questions]]

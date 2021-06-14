@@ -466,3 +466,24 @@ ul.social-buttons li a:active {
 ::selection {
     background: lightgray;
 }
+
+.page-logo {
+    height: auto;
+    max-width: 10%;
+}
+
+.pagetext > h2 {
+    padding-top: 20px;
+}
+
+.pagetext > p {
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 0px;
+    line-height: 1.8;
+}
+
+.pagetext li {
+    font-size: 16px;
+    line-height: 1.8;
+}
