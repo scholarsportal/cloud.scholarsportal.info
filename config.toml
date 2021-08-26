@@ -364,7 +364,7 @@ googleAnalytics = ""
 	[params.contact]
     enable = true
 		title = "Contact us"
-		subtitle  = "Get In Touch!"
+		subtitle  = "Have a question about the OLRC? Check out [our documentation](https://learn.scholarsportal.info/all-guides/cloud/) or contact us below."
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
