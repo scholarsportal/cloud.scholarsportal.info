@@ -92,7 +92,7 @@ googleAnalytics = ""
 		# the 'static/img' folder.
 		title = "ONTARIO LIBRARY RESEARCH CLOUD"
 		subtitle = "Secure & affordable storage for your digital content"
-		buttonText = "Tell me more"
+		buttonText = ""
 
 		[[params.hero.logo]]
 			img = "olrc-logo-original.png"
