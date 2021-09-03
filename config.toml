@@ -1,12 +1,9 @@
 # Site settings
-#baseurl = "http://localhost/OLRC_site/public/"
-#baseurl = "https://staticdev.scholarsportal.info/olrc-public/"
 baseurl = "https://cloud.scholarsportal.info/"
 title = "Ontario Library Research Cloud"
 languageCode = "en-us"
 theme = "hugo-agency-theme"
 # Enter your tracking code to enable Google Analytics
-#googleAnalytics = "UA-9010354-10"
 googleAnalytics = ""
 
 [markup]
@@ -148,7 +145,7 @@ googleAnalytics = ""
 		[[params.about.events]]
 			img = "logo.png"
 			title = "Swiftbrowser"
-			description = "The OLRC can easily be accessed via a web application developed by Scholars Portal called SwiftBrowser. SwiftBrowser allows users to upload files to OLRC containers through a simple drag and drop web interface. SwiftBrowser is available as a hosted application through Scholars Portal, or can be downloaded from GitHub and installed locally."
+			description = "The OLRC cab be accessed via a web application developed by Scholars Portal called SwiftBrowser. SwiftBrowser allows users to upload files to OLRC containers through a simple drag and drop web interface. SwiftBrowser is available as a hosted application through Scholars Portal, or can be downloaded from GitHub and installed locally."
 
 		[[params.about.events]]
 			img = "archivematica.png"
@@ -195,7 +192,7 @@ googleAnalytics = ""
 
    		[[params.faq.questions]]
    		question = "What is the Ontario Library Research Cloud (OLRC)?"
-   		answer = "The OLRC is a distributed object storage network managed by Scholars Portal on behalf of OCUL member libraries. Storage nodes are geographically distributed among 5 data centers located at member institutions. Content in the network is replicated automatically among storage nodes at these five data centers."
+   		answer = "The OLRC is a distributed object storage network managed by Scholars Portal on behalf of subscribing member libraries. Storage nodes are geographically distributed among 5 data centers located at member institutions. Content in the network is replicated automatically among storage nodes at these five data centers."
 		id = "01"
 
    		[[params.faq.questions]]
@@ -205,17 +202,17 @@ googleAnalytics = ""
 
    		[[params.faq.questions]]
    		question = "What can I store in the Cloud?"
-   		answer = "The cloud storage service is intended to provide OCUL libraries with an economical option for the long-term storage of digital objects. A digital object can be any kind of file, but will typically be some kind of content object – a geospatial file, a digital video, a PDF, a scanned image – that is not likely to change over its lifespan. Ideal uses of the Cloud are for storage of large volumes of content that would be too expensive to store on a file server, but that may need to be accessed often enough to make tape storage problematic. Cloud storage may not always the best option for your storage needs. Please contact Scholars Portal if you have questions about your use cases."
+   		answer = "The cloud storage service is intended to provide Canadian university libraries with an economical option for the long-term storage of digital objects. A digital object can be any kind of file, but will typically be some kind of content object – a geospatial file, a digital video, a PDF, a scanned image – that is not likely to change over its lifespan. Ideal uses of the Cloud are for storage of large volumes of content that would be too expensive to store on a file server, but that may need to be accessed often enough to make tape storage problematic. All data uploaded to the OLRC is subject to [the OLRC Terms of Use](/terms). <br><br> Cloud storage may not always the best option for your storage needs. Please [contact Scholars Portal](#contact) if you have questions about your use cases. "
 		id = "03"
 
    		[[params.faq.questions]]
    		question = "How much do I pay for storage?"
-   		answer = "The OCUL Storage Cloud is a subscription service. Subscribing libraries will be charged for the storage they have consumed in the cloud on an annual basis. Fees will be calculated based on each TB of storage used, rounded up to the nearest TB, as of May 1st of each year. A base fee calculated on 5 TB of storage will apply to each subscriber. Invoices for storage will be issued by the OCUL Office to the subscribing library."
+   		answer = "The Ontario Library Research Cloud is a subscription service. Subscribing libraries will be charged for the storage they have consumed in the cloud on an annual basis. Fees will be calculated based on each TB of storage used, rounded up to the nearest TB, as of May 1st of each year. A base fee calculated on 5 TB of storage will apply to each subscriber. Invoices for storage will be issued by the OCUL Office to the subscribing library."
 		id = "04"
 
 		[[params.faq.questions]]
 		question = "How is the price set for storage?"
-		answer = "The OCUL Storage Cloud is governed by a committee reporting to the OCUL Executive that has responsibility for reviewing subscription fees on an annual basis. Fees are calculated to recover the cost of hardware and staff needed to support and grow the service. As these costs change over time, the per TB subscription fee will be adjusted. Costs will be reviewed by the Cloud Storage Committee for approval by the OCUL Executive and presentation at the fall Directors’ meeting. The new fees will be applied at the beginning of the immediately following fiscal year, normally May 1 for universities in Ontario."
+		answer = "The Ontario Library Research Cloud is governed by a committee reporting to the OCUL Executive that has responsibility for reviewing subscription fees on an annual basis. Fees are calculated to recover the cost of hardware and staff needed to support and grow the service. As these costs change over time, the per TB subscription fee will be adjusted. Costs will be reviewed by the Cloud Storage Committee for approval by the OCUL Executive and presentation at the fall Directors’ meeting. The new fees will be applied at the beginning of the immediately following fiscal year, normally May 1."
 		id = "05"
 
 		[[params.faq.questions]]
@@ -245,7 +242,7 @@ googleAnalytics = ""
 
    		[[params.faq.questions]]
    		question = "What happens if OCUL decides to end this service?"
-   		answer = "Final authority for the operation of the Cloud service rests with the OCUL member libraries. If a decision is made to terminate the service, all subscribing members will be provided with at least 6 months notice and assistance from Scholars Portal staff to extract and transfer their data to another cloud provider or to tape or portable hard disk."
+   		answer = "Final authority for the operation of the Cloud service rests with the member libraries. If a decision is made to terminate the service, all subscribing members will be provided with at least 6 months notice and assistance from Scholars Portal staff to extract and transfer their data to another cloud provider or to tape or portable hard disk."
 		id = "11"
 
 	# Team section (disabled)
@@ -278,32 +275,32 @@ googleAnalytics = ""
 
     	[[params.clients]]
     		logo = "Algoma.jpg"
-    		link = "https://www.algomau.ca/"
+    		link = "https://algomau.ca"
     		alt = "Algoma University"
 
     	[[params.clients]]
     		logo = "Carleton.jpg"
-    		link = "http://carleton.ca/"
+    		link = "https://carleton.ca"
     		alt = "Carleton University"
 
     	[[params.clients]]
     		logo = "Guelph.jpg"
-    		link = "http://www.uoguelph.ca/"
+    		link = "https://www.uoguelph.ca"
     		alt = "University of Guelph"
 
     	[[params.clients]]
     		logo = "Laurier.png"
-    		link = "https://www.wlu.ca/"
+    		link = "https://www.wlu.ca"
     		alt = "Wilfrid Laurier University"
 
     	[[params.clients]]
     		logo = "McMaster.jpg"
-    		link = "http://www.mcmaster.ca/"
+    		link = "https://www.mcmaster.ca"
     		alt = "McMaster University"
 
     	[[params.clients]]
     		logo = "OntarioTech.png"
-    		link = "https://ontariotechu.ca/"
+    		link = "https://ontariotechu.ca"
     		alt = "Ontario Tech University"
 
     	[[params.clients]]
@@ -313,32 +310,32 @@ googleAnalytics = ""
 
     	[[params.clients]]
     		logo = "Queens.png"
-    		link = "http://www.queensu.ca/"
+    		link = "https://www.queensu.ca"
     		alt = "Queen's University"
 
     	[[params.clients]]
     		logo = "Ryerson.png"
-    		link = "http://www.ryerson.ca/index.html"
+    		link = "https://www.ryerson.ca"
     		alt = "Ryerson University"
 
     	[[params.clients]]
     		logo = "Toronto.png"
-    		link = "https://www.utoronto.ca/"
+    		link = "https://www.utoronto.ca"
     		alt = "University of Toronto"
 
     	[[params.clients]]
     		logo = "Waterloo.png"
-    		link = "https://uwaterloo.ca/"
+    		link = "https://uwaterloo.ca"
     		alt = "University of Waterloo"
 
     	[[params.clients]]
     		logo = "Windsor.jpg"
-    		link = "http://www.uwindsor.ca/"
+    		link = "https://www.uwindsor.ca"
     		alt = "University of Windsor"
 
     	[[params.clients]]
     		logo = "York.png"
-    		link = "http://www.yorku.ca/index.html"
+    		link = "https://www.yorku.ca"
     		alt = "York University"
 
       [params.subclients_list]
@@ -364,7 +361,7 @@ googleAnalytics = ""
 	[params.contact]
     enable = true
 		title = "Contact us"
-		subtitle  = "Have a question about the OLRC? Check out [our documentation](https://learn.scholarsportal.info/all-guides/cloud/) or contact us below."
+		subtitle = "Have a question about the OLRC? Check out [our documentation](https://learn.scholarsportal.info/all-guides/cloud/) or contact us below."
 		buttonText = "Send message"
 
 		# 'warning' defines error messages for invalid inputs
@@ -391,8 +388,8 @@ googleAnalytics = ""
     	secondcopyright = "Scholars Portal"
 		logo = "ocul.png"
     	secondlogo = "sp.png"
-		link = "http://ocul.on.ca"
-    	secondlink = "http://scholarsportal.info/"
+		link = "https://ocul.on.ca"
+    	secondlink = "https://scholarsportal.info/"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"
