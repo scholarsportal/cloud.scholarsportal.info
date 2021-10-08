@@ -109,7 +109,7 @@ googleAnalytics = ""
             [[params.services.row.list]]
                 icon = "fa-shield"
                 title = "Reliable"
-                description = "The OLRC automatically maintains three copies of every file in the cloud in three separate locations across the network. If one of these copies becomes unreadable, a new copy is created by the system from the two remaining good copies."
+                description = "The OLRC automatically replicates every file to three geographically separate locations. If one of these copies becomes unreadable, a new copy is created from the two remaining available copies and is stored in a different location to ensure consistent, reliable access."
 
             [[params.services.row.list]]
                 icon = "fa-usd"
@@ -117,14 +117,14 @@ googleAnalytics = ""
                 description = "The OLRC keeps costs low by taking advantage of economical commodity storage and the ORION high-speed network that connects Ontario’s universities, thereby eliminating the data transfer charges typical of commercial cloud storage services."
 
             [[params.services.row.list]]
-                icon = "fa-lock"
-                title = "Secure"
-                description = "Storage nodes in the OLRC are connected through the private ORION research network, and are housed in university owned and operated data centers across Ontario. None of the traffic travels over the public internet, and connections use SSL encryption."
-
-            [[params.services.row.list]]
                 icon = "fa-exchange"
                 title = "Flexible"
                 description = "The OLRC stores and reads files using simple HTTP protocols. This means that it can be integrated into a wide variety of workflows and applications, and accessed from any Internet-connected device for easy file management."
+
+			[[params.services.row.list]]
+                icon = "fa-lock"
+                title = "Secure"
+                description = "The OLRC storage nodes are connected through the private ORION research network and housed in university owned and operated data centers across Ontario. No traffic travels over the public internet, and connections use SSL encryption. All data uploaded is encrypted at rest."
 
     # Features section
 	[params.about]
@@ -145,22 +145,18 @@ googleAnalytics = ""
 		[[params.about.events]]
 			img = "logo.png"
 			title = "Swiftbrowser"
-			description = "The OLRC cab be accessed via a web application developed by Scholars Portal called SwiftBrowser. SwiftBrowser allows users to upload files to OLRC containers through a simple drag and drop web interface. SwiftBrowser is available as a hosted application through Scholars Portal, or can be downloaded from GitHub and installed locally."
+			description = "The OLRC cab be accessed via a web application developed by Scholars Portal called SwiftBrowser. SwiftBrowser allows users to upload files to OLRC containers through a simple drag and drop web interface."
+
+		[[params.about.events]]
+			img = "duracloud.png"
+			title = "DuraCloud"
+			description = "[DuraCloud](https://duraspace.org/duracloud/) is an open-source technology used to manage files in a variety of storage systems. DuraCloud is developed by DuraSpace and has been modified to run locally by Scholars Portal and the University of Toronto Libraries as the future frontend for the OLRC. This project has been made possible by support from CANARIE."
 
 		[[params.about.events]]
 			img = "archivematica.png"
 			title = "Archivematica"
 			description = "[Archivematica](https://www.archivematica.org/en/) is an open-source digital preservation workflow management application. Through its Storage Service module, Swift containers can be designated as storage destinations for both AIPs and DIPs. This allows the OLRC to be integrated into Archivematica preservation workflows, and in turn, Archivematica integrates with repository tools."
 
-		#[[params.about.events]]
-		#	img = "owncloud.png"
-		#	title = "ownCloud"
-		#	description = "Developed as an open-source alternative to tools like Dropbox, [ownCloud](https://owncloud.org/) is an application that allows users to access their files on the web. Local folders can be synchronized with folders stored in the cloud, and files can be uploaded to the cloud using standard file browser services. ownCloud can be configured to connect to the OLRC through the OpenStack Swift API. Scholars Portal is currently offering ownCloud as a pilot service, and it can also be installed by local system administrators."
-
-		[[params.about.events]]
-			img = "duracloud.png"
-			title = "DuraCloud"
-			description = "[DuraCloud](https://duraspace.org/duracloud/) is an open-source technology used to manage files in a variety of storage systems. DuraCloud is developed by DuraSpace and has been modified to run locally by Scholars Portal and the University of Toronto Libraries as the future frontend for the OLRC. This project has been made possible by support from CANARIE."
 
 	# Use Cases section
 	[params.portfolio]
@@ -282,6 +278,11 @@ googleAnalytics = ""
     		logo = "Carleton.jpg"
     		link = "https://carleton.ca"
     		alt = "Carleton University"
+
+    	[[params.clients]]
+    		logo = "Concordia.png"
+    		link = "https://www.concordia.ca/"
+    		alt = "Concordia University"
 
     	[[params.clients]]
     		logo = "Guelph.jpg"
