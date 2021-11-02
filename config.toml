@@ -81,7 +81,7 @@ googleAnalytics = ""
 
     # postpended links
     [[menu.postpend]]
-        url = "https://olrc.scholarsportal.info/swiftbrowser/login/"
+        url = "https://olrc2.scholarsportal.info/horizon/"
         name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
         weight = 10
 
@@ -109,7 +109,7 @@ googleAnalytics = ""
             [[params.services.row.list]]
                 icon = "fa-shield"
                 title = "Reliable"
-                description = "The OLRC automatically replicates every file to three geographically separate locations. If one of these copies becomes unreadable, a new copy is created from the two remaining available copies and is stored in a different location to ensure consistent, reliable access."
+                description = "The OLRC automatically replicates every file to three geographically separate locations. If one of these replicas becomes unreadable, a new replica is created by the system from the two remaining available replicas and is stored in a different location to ensure consistent, reliable access."
 
             [[params.services.row.list]]
                 icon = "fa-usd"
@@ -144,8 +144,8 @@ googleAnalytics = ""
 
 		[[params.about.events]]
 			img = "logo.png"
-			title = "Swiftbrowser"
-			description = "The OLRC cab be accessed via a web application developed by Scholars Portal called SwiftBrowser. SwiftBrowser allows users to upload files to OLRC containers through a simple drag and drop web interface."
+			title = "Horizon"
+			description = "The OLRC can be accessed via a web application called Horizon. Horizon is Openstack’s default dashboard where you can manage users and projects, and browse, upload and download files."
 
 		[[params.about.events]]
 			img = "duracloud.png"
@@ -188,12 +188,12 @@ googleAnalytics = ""
 
    		[[params.faq.questions]]
    		question = "What is the Ontario Library Research Cloud (OLRC)?"
-   		answer = "The OLRC is a distributed object storage network managed by Scholars Portal on behalf of subscribing member libraries. Storage nodes are geographically distributed among 5 data centers located at member institutions. Content in the network is replicated automatically among storage nodes at these five data centers."
+   		answer = "The OLRC is a distributed object storage network managed by Scholars Portal on behalf of subscribing member libraries. Storage nodes are geographically distributed among five data centers located at member institutions. Content in the network is replicated automatically among storage nodes at these five data centers."
 		id = "01"
 
    		[[params.faq.questions]]
    		question = "How do I access the Cloud?"
-   		answer = "Access to the cloud is restricted by username/password and IP address. Content can be transferred to and from the cloud using the OpenStack Swift API or any tool that implements this API."
+   		answer = "Access to the cloud is restricted by credentials and IP address. Content can be transferred to and from the cloud using the OpenStack Swift API, the S3 API, or any tool that implements these APIs."
 		id = "02"
 
    		[[params.faq.questions]]
@@ -218,7 +218,7 @@ googleAnalytics = ""
 
 		[[params.faq.questions]]
 		question = "What other benefits do I get through subscription?"
-		answer = "User support will be provided to all subscribing libraries through Scholars Portal."
+		answer = "User support will be provided to all subscribing libraries by Scholars Portal."
 		id = "07"
 
 		[[params.faq.questions]]
@@ -228,7 +228,7 @@ googleAnalytics = ""
 
 		[[params.faq.questions]]
 		question = "What kinds of provisions does the OLRC make for the security of my files?"
-		answer = "Network nodes in the Storage Cloud are connected through ORION, the high-speed research network that is supported by Ontario’s universities. Data is transferred between nodes over a private network within the ORION infrastructure. All uploads and downloads from the Cloud are secured via SSL."
+		answer = "Network nodes in the Storage Cloud are connected through ORION, the high-speed research network that is supported by Ontario’s universities. Data is transferred between nodes over a private network within the ORION infrastructure. All uploads and downloads from the Cloud are secured via SSL. All data uploaded to the OLRC is encrypted at rest."
 		id = "09"
 
    		[[params.faq.questions]]
