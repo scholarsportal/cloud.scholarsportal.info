@@ -233,7 +233,7 @@ googleAnalytics = ""
 
    		[[params.faq.questions]]
    		question = "Are files in the cloud also backed up to tape?"
-   		answer = "Backup of data within the cloud relies on replication of data between nodes. Unless specifically requested, tape backup is not provided as part of the subscription fee. Please contact Scholars Portal to discuss options for tape backup or backup into a secondary cloud."
+   		answer = "Backup of data within the cloud relies on replication of data between nodes. Tape backup is not provided as part of the subscription fee. Please contact Scholars Portal to discuss options for tape backup or backup into a secondary cloud."
 		id = "10"
 
    		[[params.faq.questions]]
