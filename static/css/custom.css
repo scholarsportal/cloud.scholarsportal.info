@@ -288,6 +288,7 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: left;
+    background: #000 url(../img/header-bg.jpg);
 }
 
 header .intro-text .intro-lead-in {
