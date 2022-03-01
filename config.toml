@@ -320,6 +320,11 @@ googleAnalytics = ""
     		alt = "Ryerson University"
 
     	[[params.clients]]
+    		logo = "StFX.jpg"
+    		link = "https://www.stfx.ca"
+    		alt = "St. Francis Xavier University"
+
+    	[[params.clients]]
     		logo = "Toronto.png"
     		link = "https://www.utoronto.ca"
     		alt = "University of Toronto"
