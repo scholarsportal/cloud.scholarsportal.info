@@ -155,7 +155,7 @@ googleAnalytics = ""
 		[[params.about.events]]
 			img = "archivematica.png"
 			title = "Archivematica"
-			description = "[Archivematica](https://www.archivematica.org/en/) is an open-source digital preservation workflow management application. Through its Storage Service module, Swift containers can be designated as storage destinations for both AIPs and DIPs. This allows the OLRC to be integrated into Archivematica preservation workflows, and in turn, Archivematica integrates with repository tools."
+			description = "[Archivematica](https://www.archivematica.org/en/) is an open-source digital preservation processing tool. Through its Storage Service application, containers and spaces in Horizon and DuraCloud can be designated as storage destinations for both AIPs and DIPs. This allows the OLRC to be integrated into Archivematica-based workflows for both preservation and access."
 
 
 	# Use Cases section
