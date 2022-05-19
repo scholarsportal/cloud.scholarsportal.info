@@ -150,7 +150,7 @@ googleAnalytics = ""
 		[[params.about.events]]
 			img = "duracloud.png"
 			title = "DuraCloud"
-			description = "[DuraCloud](https://duraspace.org/duracloud/) is an open-source technology used to manage files in a variety of storage systems. DuraCloud is developed by DuraSpace and has been modified to run locally by Scholars Portal and the University of Toronto Libraries as the future frontend for the OLRC. This project has been made possible by support from CANARIE."
+			description = "[DuraCloud](https://duraspace.org/duracloud/) is an open-source application designed for preservation management across storage systems. Using DuraCloud enables users to store and sync additional copies with separate storage providers and automate independent fixity checks. DuraCloud has been modified to use the OLRC by Scholars Portal and the University of Toronto Libraries thanks to support from CANARIE."
 
 		[[params.about.events]]
 			img = "archivematica.png"
