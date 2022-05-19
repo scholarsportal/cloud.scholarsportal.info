@@ -155,7 +155,7 @@ googleAnalytics = ""
 		[[params.about.events]]
 			img = "archivematica.png"
 			title = "Archivematica"
-			description = "[Archivematica](https://www.archivematica.org/en/) is an open-source digital preservation processing tool. Through its Storage Service application, containers and spaces in Horizon and DuraCloud can be designated as storage destinations for both AIPs and DIPs. This allows the OLRC to be integrated into Archivematica-based workflows for both preservation and access."
+			description = "[Archivematica](https://www.archivematica.org/en/) offers an open-source workflow for digital preservation processing. Through the Archivematica Storage Service application, containers and spaces in Horizon and DuraCloud can be designated as destinations for both preservation and access copies. Scholars Portal offers hosted instances of Archivematica connected to the OLRC through the [Permafrost](https://permafrost.scholarsportal.info) digital preservation service."
 
 
 	# Use Cases section
